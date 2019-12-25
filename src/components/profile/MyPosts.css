@@ -1,0 +1,39 @@
+.profile__posts {
+  display: flex;
+  flex-direction: column;
+}
+.profile__form {
+  display: flex;
+  flex-direction: column;
+}
+.profile__text {
+  width: 400px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #7d7253;
+  font-family: "PT Sans";
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+.profile__button {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f4552e;
+  color: white;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.profile__button:hover {
+  background-color: #e2451d;
+  cursor: pointer;
+}
+.profile__posts-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}

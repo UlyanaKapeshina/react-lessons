@@ -1,0 +1,14 @@
+.dialog__list {
+  width: 50%;
+}
+.dialog__item {
+  padding: 10px;
+  list-style: none;
+}
+.dialog__name {
+  color: black;
+  text-decoration: none;
+}
+.active {
+  color: gold;
+}

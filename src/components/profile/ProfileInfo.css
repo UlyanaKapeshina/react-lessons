@@ -1,0 +1,23 @@
+.profile__about {
+  display: flex;
+}
+.profile__photo {
+  width: 200px;
+}
+.profile__status {
+  font-size: 16px;
+  color: rgb(87, 74, 74);
+  margin-bottom: 50px;
+}
+.profile__data td {
+  width: 150px;
+}
+.profile__inner {
+  margin-left: 100px;
+}
+.profile__name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

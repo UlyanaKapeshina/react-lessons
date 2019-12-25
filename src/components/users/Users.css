@@ -1,0 +1,87 @@
+.users {
+}
+.users__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.users__item {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #f5ecce;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.user__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.user__description {
+}
+.user__photo {
+  width: 100px;
+  height: 100px;
+  padding-bottom: 10px;
+}
+.users__pagination {
+  margin-bottom: 40px;
+}
+.user__button {
+  margin-bottom: 10px;
+  background-color: #fc6236;
+  border: transparent;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "PT Sans";
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.user__button:disabled {
+  opacity: 0.1;
+}
+.user__button:hover {
+  opacity: 0.7;
+}
+.user__button:active {
+  opacity: 0.3;
+}
+.user__name {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+.users__page-number {
+  margin: 2px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #fc6236;
+  font-family: "PT Sans";
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.users__page-number:hover {
+  opacity: 0.7;
+}
+.users__page-number:active {
+  opacity: 0.3;
+}
+.users__selectedPage {
+  font-weight: bold;
+  margin: 2px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: "PT Sans";
+  color: #fc6236;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.user__status {
+  word-break: break-all;
+}

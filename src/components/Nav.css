@@ -1,0 +1,29 @@
+.app__nav {
+  grid-area: nav;
+  background-color: #f5ecce;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+.app__nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.app__item {
+  /* padding-bottom: 20px; */
+  border: 2px solid #f1e9cf;
+  padding: 20px;
+  padding-left: 50px;
+}
+.app__item:hover {
+  background-color: #f2e7bd;
+}
+.app__link {
+  color: #7d7253;
+  text-decoration: none;
+  /* padding: 10px; */
+}
+.active {
+  color: #fc6236;
+}

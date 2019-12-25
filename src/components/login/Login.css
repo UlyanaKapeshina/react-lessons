@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__field {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.login__remember {
+  margin-bottom: 20px;
+}
+.login label {
+  color: rgb(116, 102, 98);
+}
+.login__error-text {
+  padding-top: 10px;
+  color: red;
+}
+.login__error {
+  display: flex;
+  justify-content: center;
+}
+.login__button {
+  width: 200px;
+  padding: 10px;
+  background-color: rgb(238, 69, 17);
+  border-radius: 5px;
+  border-color: transparent;
+  color: aliceblue;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+}

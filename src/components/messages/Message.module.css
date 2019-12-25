@@ -1,0 +1,21 @@
+.messages {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialog__list {
+  width: 50%;
+}
+
+.active {
+  color: gold;
+}
+.messages__list {
+  width: 50%;
+}
+.messages__item {
+  padding: 10px;
+  list-style: none;
+  background-color: #95d4d2;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}

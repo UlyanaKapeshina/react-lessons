@@ -1,0 +1,45 @@
+.messages {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 2fr;
+}
+.messages__box {
+  padding-left: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.messages__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.messages__text {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: "PT Sans";
+  border-radius: 5px;
+}
+
+.messages__list {
+  /* width: 50%; */
+  padding: 0;
+}
+.messages__item {
+  padding: 10px;
+}
+.messages__button {
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f4552e;
+  color: white;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.messages__button:hover {
+  background-color: #e2451d;
+  cursor: pointer;
+}
