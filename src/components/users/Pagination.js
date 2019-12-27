@@ -1,52 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Users.css";
 
 const Pagination = props => {
   let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-  let pageRange = 8;
-  if (
-    props.currentPage > pageRange + 1 &&
-    props.currentPage < pagesCount - pageRange
-  ) {
-    pageRange = pageRange - 1;
-  }
-  const rangeStart = () => {
-    const start = props.currentPage - pageRange;
-    const end = props.currentPage + pageRange;
-    if (end >= pagesCount) {
-      return start - (end - pagesCount);
-    }
-    if (start > 0) {
-      return start;
-    } else {
-      return 1;
-    }
-  };
-  const rangeEnd = () => {
-    const end = props.currentPage + pageRange;
-    const start = props.currentPage - pageRange;
-    if (start <= 1) {
-      return end - start;
-    }
-    if (end < pagesCount) {
-      return end;
-    } else {
-      return pagesCount;
-    }
-  };
-  let pages = [];
-  const start = rangeStart();
-  const end = rangeEnd();
 
+  const PAGE_DIFFERENCE = 6;
+  const BUTTONS_COUNT = 8;
+  const START_BUTTON_NUMBER = 1;
+  const pageRange = 3;
+
+  let start = props.currentPage - pageRange;
+  let end = props.currentPage + pageRange;
+
+  if (props.currentPage <= PAGE_DIFFERENCE) {
+    start = START_BUTTON_NUMBER;
+    end = start + BUTTONS_COUNT;
+  }
+  if (props.currentPage > pagesCount - PAGE_DIFFERENCE) {
+    start = pagesCount - BUTTONS_COUNT;
+    end = pagesCount;
+  }
+
+  let pages = [];
   for (let i = start; i <= end; i++) {
     pages.push(i);
   }
 
   const hasFirstPage = () => {
-    return start > 1;
+    return props.currentPage > PAGE_DIFFERENCE;
   };
   const hasLastPage = () => {
-    return end < pagesCount;
+    return props.currentPage <= pagesCount - PAGE_DIFFERENCE;
   };
 
   const buttons = pages.map((page, i) => (
